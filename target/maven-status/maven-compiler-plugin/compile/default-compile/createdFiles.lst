@@ -1,2 +1,4 @@
 com/gaurav/mapreduce/util/MapReduceExampleMain.class
 com/gaurav/mapreduce/map/MapClass.class
+com/gaurav/mapreduce/map/MapCombineInputFormat.class
+com/gaurav/mapreduce/util/MapReduceCombineInputFormatExample.class

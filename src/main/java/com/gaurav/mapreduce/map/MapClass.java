@@ -13,6 +13,12 @@ public class MapClass extends Mapper<Object, Text, Text, IntWritable> {
 
   @Override
   protected void map(Object key, Text value, Context context) throws IOException, InterruptedException {
+
+    System.out.println("MapClass : GG");
+    StackTraceElement[] stackTraceArray = Thread.currentThread().getStackTrace();
+    for(StackTraceElement stackTraceElement : stackTraceArray){
+      System.out.println("MapClass : GG : "+stackTraceElement);
+    }
     if (value.toString().contains("female")) {
       text = new Text("female");
       context.write(text, intValue);
